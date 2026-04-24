@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Story ❤️</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5f7;
+  text-align: center;
+  margin: 0;
+}
+.container {
+  padding: 40px;
+}
+h1 {
+  color: #e63946;
+}
+p {
+  color: #333;
+  font-size: 18px;
+}
+iframe {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+  margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Our Story, One Puzzle at a Time ❤️</h1>
+  <p>
+    Every place we've been to has a memory.  
+    Solve this, and you'll unlock something from me 🙂
+  </p>
+
+  <!-- EMBED YOUR CROSSWORD HERE -->
+  <iframe 
+    src="https://crosswordlabs.com/embed/our-trips-12?show_title=1&clue_height=40"
+    width="90%" 
+    height="500">
+  </iframe>
+
+  <br>
+
+  <button class="button" onclick="showMessage()">I Finished It 💌</button>
+
+  <div id="message" class="hidden">
+    <p>
+      If you reached here… it means you remembered everything.  
+      Just like I do.  
+    </p>
+    <p>
+      I know I messed up… but I don’t want distance or mistakes to define us.  
+      I want more memories like these… with you.
+    </p>
+    <p>❤️</p>
+  </div>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
